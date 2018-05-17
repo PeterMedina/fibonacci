@@ -9,27 +9,32 @@
  */
 
 function fib($number) {
-
     // Set defaults
     $n1 = 0;
     $n2 = 1;
 
     if($number === 1) {
-        echo $n1;
+        return 0;
     } elseif($number === 2){
-        echo $n1.'<br>'.$n2.'<br>';
+        return 1;
     } else {
-        // Show defaults to start the sequence;
-        // start the loop if arg is greater than 3
-        echo $n1.'<br>'.$n2.'<br>';
         for ($i = 2; $i < $number; $i++) {
             $fibonacci = $n1 + $n2;
-            echo number_format($fibonacci).'<br>';
             $n1 = $n2;
             $n2 = $fibonacci;
         }
     }
+    return number_format($n2);
+}
 
-    // Uncomment below to echo just the final result
-    // echo $n2;
+function fibr($n) {
+    if($n === 0) {
+        return 0;
+    }
+
+    if($n === 1) {
+        return 1;
+    }
+
+    return number_format(fibr($n-1) + fibr($n-2));
 }

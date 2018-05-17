@@ -7,7 +7,7 @@
     <body>
         <?php include 'fibonacci.php'; ?>
         <h1>
-            <?php fib(3); ?>
+            <?php echo fib(50); ?>
         </h1>
     </body>
 </html>

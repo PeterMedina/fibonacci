@@ -6,5 +6,5 @@ A simple PHP function to get the Fibonacci value of an input number.
 
 * Add some design and make it look hot
 * Add error handling
-* Make it recursive
-* Separate logic from HTML markup
+* ~~Make it recursive~~
+* ~~Separate logic from HTML markup~~
