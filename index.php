@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Fibronicci</title>
+        <title>Fibonacci</title>
     </head>
     <body>
-        <?php include 'fibronicci.php'; ?>
+        <?php include 'fibonacci.php'; ?>
         <h1>
             <?php fib(3); ?>
         </h1>

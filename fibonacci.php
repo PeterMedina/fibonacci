@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Fibronicci Generator
+ * Fibonacci Generator
  *
  * 0 1 1 2 3 5 8 13 21 34
  *
@@ -23,10 +23,10 @@ function fib($number) {
         // start the loop if arg is greater than 3
         echo $n1.'<br>'.$n2.'<br>';
         for ($i = 2; $i < $number; $i++) {
-            $fibronicci = $n1 + $n2;
-            echo number_format($fibronicci).'<br>';
+            $fibonacci = $n1 + $n2;
+            echo number_format($fibonacci).'<br>';
             $n1 = $n2;
-            $n2 = $fibronicci;
+            $n2 = $fibonacci;
         }
     }
 
