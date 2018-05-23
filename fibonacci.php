@@ -27,14 +27,14 @@ function fib($number) {
     return number_format($n2);
 }
 
-function fibr($n) {
+function fibr($n, $n1 = 1, $n2 = 0) {
     if($n === 0) {
-        return 0;
+        return $n2;
     }
 
     if($n === 1) {
-        return 1;
+        return $n1;
     }
 
-    return number_format(fibr($n-1) + fibr($n-2));
+    return fibr($n -1, $n1+$n2, $n1);
 }
